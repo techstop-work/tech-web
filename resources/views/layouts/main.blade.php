@@ -198,7 +198,7 @@
                <ul>
                    <li><i class="fa fa-envelope"></i>  <a href="mailto:contact@techstop.pro">contact@techstop.pro</a></li>
 				   <li><i class="fa fa-map-marker"></i> Remote First</li>
-				   <li><i class="fa fa-globe"></i> www.techstop.pro</li>
+				   <li><i class="fa fa-globe"></i> <a href="https://www.techstop.pro">www.techstop.pro</a></li>
                </ul>
            </div>
        </div><!-- Row end -->

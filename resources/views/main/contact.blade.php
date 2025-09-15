@@ -40,7 +40,7 @@
                 The representative will be in touch shortly.</p>
             <br>
 			<p><i class="fa fa-envelope info"></i> <a href="mailto:contact@techstop.pro">contact@techstop.pro</a></p>
-            <p><i class="fa fa-globe info"></i> www.techstop.pro</p>
+            <p><i class="fa fa-globe info"></i> <a href="https://www.techstop.pro">www.techstop.pro</a></p>
         </div>
     </div>
 </div>

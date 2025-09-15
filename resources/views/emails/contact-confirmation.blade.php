@@ -119,7 +119,7 @@
                         <img src="https://d1oktf4gbw23dy.cloudfront.net/logo.png" alt="Company Logo" class="footer-logo" loading="lazy">
                         <div class="footer-text">
                             Professional Technology Solutions<br>
-                            <a href="https://techstop.pro" class="footer-link">Visit our website</a> • <a href="https://techstop.pro/contact" class="footer-link">Contact</a><br>
+                            <a href="https://www.techstop.pro" class="footer-link">Visit our website</a> • <a href="https://www.techstop.pro/contact" class="footer-link">Contact</a><br>
                             <small class="text-amber-50">© 2024 TechStop. All rights reserved.</small>
                         </div>
                     </div>

@@ -5,7 +5,7 @@
                 <i class="fa fa-check-circle"></i>
             </div>
             <h3 style="color: #28a745; margin-bottom: 1rem;">Message Sent Successfully!</h3>
-            <p style="margin-bottom: 2rem;">Thank you for contacting us. We'll get back to you soon.</p>
+            <p style="margin-bottom: 2rem;">Thank you for contacting TechStop. A representative will get back to you soon.</p>
             <button wire:click="sendAnother" class="btn btn-primary solid">Send Another Message</button>
         </div>
     @else

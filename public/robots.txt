@@ -28,4 +28,4 @@ User-agent: DotBot
 Disallow: /
 
 # Sitemap location
-Sitemap: https://techstop.pro/sitemap.xml
+Sitemap: https://www.techstop.pro/sitemap.xml
