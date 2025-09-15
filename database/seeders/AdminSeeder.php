@@ -13,7 +13,7 @@ class AdminSeeder extends Seeder
         Admin::create([
             'name' => 'Super Admin',
             'email' => 'techstop.work@gmail.com',
-            'password' => Hash::make('Strong10!'),
+            'password' => Hash::make('Climate!'),
         ]);
     }
 }
