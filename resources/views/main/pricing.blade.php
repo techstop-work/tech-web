@@ -2,6 +2,8 @@
 
 @section('title', 'TechStop | Pricing ')
 
+@section('canonical', 'https://www.techstop.pro/pricing')
+
 @section('content')
 <div id="banner-area">
 		<img src="https://d1oktf4gbw23dy.cloudfront.net/banner1.webp" alt="banner" loading="lazy" />

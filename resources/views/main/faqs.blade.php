@@ -1,6 +1,8 @@
 @extends('layouts.main')
 
-@section('title', 'TechStop | FAQs') 
+@section('title', 'TechStop | FAQs')
+
+@section('canonical', 'https://www.techstop.pro/faqs')
 
 @section('content')
 <div id="banner-area">

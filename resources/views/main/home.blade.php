@@ -2,6 +2,8 @@
 
 @section('title', 'TechStop - Web Development Services')
 
+@section('canonical', 'https://www.techstop.pro/')
+
 @section('og_title', 'TechStop - Web Development Services')
 @section('og_description', 'Empowering startups and businesses with reliable, modern website solutions. Expert web development, cloud services, and digital transformation.')
 @section('og_image', url('/images/logo2.webp'))

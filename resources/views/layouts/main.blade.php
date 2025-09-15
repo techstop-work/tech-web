@@ -10,6 +10,10 @@
 	<meta name="keywords" content="website development, web design, business websites, custom website solutions, cloud services, seo services, content writing, devops, api integrations, tech, digital solutions ">
 	<meta name="author" content="TechStop">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href="{{ $canonical ?? 'https://www.techstop.pro' . request()->getRequestUri() }}">
+
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="{{ url()->current() }}">
@@ -21,6 +25,8 @@
 	<meta property="og:image:alt" content="TechStop - Web Development Company Logo">
 	<meta property="og:site_name" content="TechStop">
 	<meta property="og:locale" content="en_US">
+
+	
 
 	<!-- Twitter Card -->
 	<meta name="twitter:card" content="summary_large_image">
@@ -306,6 +312,7 @@
 		});
 	});
 	
+	
 	// Style switcher function
 	function initStyleSwitcher() {
 		const presetButtons = document.querySelectorAll('[id^="preset"]');
@@ -392,6 +399,9 @@
 	animation: pulseCogs 2s ease-in-out infinite;
 }
 
+
+
 </style>
+
 </body>
 </html>
