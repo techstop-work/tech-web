@@ -36,12 +36,9 @@ jobs:
             php artisan view:cache
 
             # Run database migrations
-            
+
             php artisan migrate --force
 
-            # Install and build frontend assets (Livewire, Alpine.js, etc.)
-            npm install
-            npm run build
 
             # Restart the PHP FPM service to apply changes
-            sudo systemctl reload php8.1-fpm # Adjust the PHP version as needed
+            sudo systemctl reload php8.3-fpm # Adjust the PHP version as needed
