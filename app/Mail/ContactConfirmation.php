@@ -20,7 +20,7 @@ class ContactConfirmation extends Mailable implements ShouldQueue
 
     public function build()
     {
-        return $this->subject('Thank you for contacting us')
+        return $this->subject('Thank you for contacting')
         ->view('emails.contact-confirmation');
     }
 }

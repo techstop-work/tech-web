@@ -9,7 +9,7 @@
             <button wire:click="sendAnother" class="btn btn-primary solid">Send Another Message</button>
         </div>
     @else
-        <form wire:submit.prevent="submit" class="contact-form" style="transition: all 0.3s ease;">
+        <form wire:submit.prevent="submit" class="contact-form shadow p-4 rounded" style="transition: all 0.3s ease;">
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">

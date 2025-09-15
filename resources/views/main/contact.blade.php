@@ -24,16 +24,19 @@
 
 	<section id="main-container">
 		<div class="container">
-			
-		
-
-			<div class="gap-40"></div>
 			@if(session('success'))
     <div class="alert alert-success">{{ session('success') }}</div>
 @endif
+<h3 class="section-title mb-3"><i class="fa fa-paper-plane mr-2" style="color: #334F96;"></i> Get In Touch</h3>
+            <div class="gap-20"></div>
 <div class="row">
     <div class="col-md-7">
-        @livewire('contact-form')
+        <div class="contact-form-section mb-4">
+            
+            <div class="form-container">
+                @livewire('contact-form')
+            </div>
+        </div>
     </div>
     <div class="col-md-5">
         <div class="contact-info">
@@ -51,3 +54,4 @@
 
 	</section><!--/ Main container end -->
 @endsection
+
