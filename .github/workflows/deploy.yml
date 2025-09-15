@@ -1,0 +1,46 @@
+name: Deploy Laravel Livewire Project
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Deploy to EC2 via SSH
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USERNAME }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            # Navigate to the project directory on the EC2 instance
+            cd /var/www/your-project-name
+
+            # Pull the latest changes from the Git repository
+            git pull origin main
+
+            # Install or update Composer dependencies
+            composer install --no-dev --optimize-autoloader
+
+            # Clear cache and optimize application
+            php artisan cache:clear
+            php artisan config:cache
+            php artisan route:cache
+            php artisan view:cache
+
+            # Run database migrations
+            php artisan migrate --force
+
+            # Install and build frontend assets (Livewire, Alpine.js, etc.)
+            npm install
+            npm run build
+
+            # Restart the PHP FPM service to apply changes
+            sudo systemctl reload php8.1-fpm # Adjust the PHP version as needed
