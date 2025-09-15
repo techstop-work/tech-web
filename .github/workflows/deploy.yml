@@ -36,6 +36,7 @@ jobs:
             php artisan view:cache
 
             # Run database migrations
+            
             php artisan migrate --force
 
             # Install and build frontend assets (Livewire, Alpine.js, etc.)
