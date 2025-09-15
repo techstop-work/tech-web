@@ -23,6 +23,8 @@ jobs:
             # Navigate to the project directory on the EC2 instance
             cd /var/www/project
 
+            git reset --hard HEAD
+
             # Pull the latest changes from the Git repository
             git pull origin main
 
@@ -37,10 +39,7 @@ jobs:
             
             # Run database migrations
 
-            php artisan migrate --force
-
-            # Drop admin table to ensure clean seeding
-            php artisan tinker --execute="DB::statement('DROP TABLE IF EXISTS admins');"
+            php artisan migrate:refresh
 
             php artisan db:seed --class=AdminSeeder --force
 
