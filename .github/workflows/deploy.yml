@@ -21,7 +21,7 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             # Navigate to the project directory on the EC2 instance
-            cd /var/www/your-project-name
+            cd /var/www/project
 
             # Pull the latest changes from the Git repository
             git pull origin main
